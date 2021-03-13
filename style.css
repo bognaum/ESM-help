@@ -5,13 +5,13 @@ body {
 }
 
 code {
-  color: #adf;
+  color: #a3ffc8;
   padding-left: 10px;
   padding-right: 10px;
   white-space: nowrap;
   white-space: pre;
   font-family: consolas;
-  text-shadow: 0 0 2px #08a;
+  text-shadow: 0 0 2px #0a8;
 }
 code span.opt {
   color: #bbb;
