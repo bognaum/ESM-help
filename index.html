@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>ESM-help</title>
+</head>
+<body>
+	<table border="" cellpadding="5" cellspacing="0" style="margin: auto;">
+		<tbody>
+			<tr>
+				<td class="trn" rowspan="2"></td>
+				<th colspan="2">default export</th>
+			</tr>
+			<tr>
+				<!-- <td class="trn"></td> -->
+				<td>
+					<p>
+						<p><code>export default <span class="meta cb">variable</span>;</code><br></p>
+
+						<p><code>export default <span class="meta cb">expression</span>;</code><br></p>
+						
+						<p>
+							<code>export default function (<span class="meta cb">…</span>) { </code><br>
+							<code>    <span class="meta">...</span> </code><br>
+							<code>} <span class="meta">       </span></code><br>
+						</p>
+
+						<p>
+							<code>export default function <span class="meta cb">name</span>(<span class="meta cb">…</span>) { </code><br>
+							<code>    <span class="meta">...</span> </code><br>
+							<code>} <span class="meta"></span></code><br>
+						</p>
+
+						<p>
+							<code>export default class <span class="meta cb">name</span> { </code><br>
+							<code>    <span class="meta">...</span> </code><br>
+							<code>} <span class="meta"></span></code><br>
+						</p>
+
+						<p><code>export { <span class="meta cb">name</span> as default};</code><br></p>
+					</p>
+				</td>
+				<!-- <td>▶</td> -->
+				<td>
+					<p>
+						<code>import <span class="meta cb">name-to-default</span> from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="trn" rowspan="2"></td>
+				<th colspan="2">simple export</th>
+			</tr>
+			<tr>
+				<!-- <td class="trn"></td> -->
+				<td>
+					<p><code>export { <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">…</span>, <span class="meta cb">nameN</span>};</code><br></p>
+					<p>
+						<code>export { </code><br>
+						<code>    <span class="meta cb">variable1</span> as <span class="meta cb">name1</span>, </code><br>
+						<code>    <span class="meta cb">variable2</span> as <span class="meta cb">name2</span>, </code><br>
+						<code>    <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span> </code><br>
+						<code>};</code><br>
+					</p>
+					<p>
+						<code>export let  <span class="meta"> // (var)</span></code><br>
+						<code>    <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">…</span>, <span class="meta cb">nameN</span>;</code><br>
+					</p>
+					<p>
+						<code>export let  <span class="meta"> // (var, const)</span></code><br>
+						<code>    <span class="meta cb">name1</span> = <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">name2</span> = <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span>;</code><br>
+					</p>
+
+					<p>
+						<code>export function <span class="meta cb">func-name</span> () { </code><br>
+						<code>    <span class="meta">...</span> </code><br>
+						<code>}</code><br>
+					</p>
+					<hr>
+					<p><code>export * from <span class="meta cb">some-object</span>;</code><br></p>
+					<p>
+						<code>export { </code><br>
+						<code>    <span class="meta cb">name1</span>, </code><br>
+						<code>    <span class="meta cb">name2</span>, </code><br>
+						<code>    <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span> </code><br>
+						<code>} from <span class="meta cb">some-object</span>;</code><br>
+					</p>
+					<p>
+						<code>export { </code><br>
+						<code>    <span class="meta cb">import1</span> as <span class="meta cb">name1</span>, </code><br>
+						<code>    <span class="meta cb">import2</span> as <span class="meta cb">name2</span>, </code><br>
+						<code>    <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span> </code><br>
+						<code>} from <span class="meta cb">some-object</span>;</code><br>
+					</p>
+				</td>
+				<!-- <td>▶</td> -->
+				<td>
+					<p><code>import * as <span class="meta cb">name</span> from <span class="meta cb">path/name</span>;</code> <br></p>
+					
+					<p><code>import { <span class="meta cb">exp-name</span> } from <span class="meta cb">path/name</span>;</code> <br></p>
+					
+					<p>
+						<code>import { </code><br>
+						<code>    <span class="meta cb">exp-name</span> as <span class="meta cb">alias</span> </code><br>
+						<code>} from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					
+					<p>
+						<code>import { </code><br>
+						<code>    <span class="meta cb">export1</span> , </code><br>
+						<code>    <span class="meta cb">export2</span> </code><br>
+						<code>} from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					
+					<p>
+						<code>import { </code><br>
+						<code>    <span class="meta cb">export1</span> , </code><br>
+						<code>    <span class="meta cb">export2</span> as <span class="meta cb">alias2</span> , </code><br>
+						<code>    <span class="meta cb">…</span> </code><br>
+						<code>} from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="trn" rowspan="2"></td>
+				<th colspan="2">default & simple export</th>
+			</tr>
+			<tr>
+				<!-- <td class="trn"></td> -->
+				<td>
+					<p>
+						<code>export { </code><br>
+						<code>    <span class="meta cb">name1</span> as default, </code><br>
+						<code>    <span class="meta cb">name2</span>, </code><br>
+						<code>    <span class="meta cb">…</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span> </code><br>
+						<code>};</code><br>
+					</p>
+				</td>
+				<!-- <td>▶</td> -->
+				<td>
+					<p>
+						<code>import </code><br>
+						<code>    <span class="meta cb">name-to-default</span>, </code><br>
+						<code>    { </code><br>
+						<code>        <span class="meta cb">name1</span>, </code><br>
+						<code>        <span class="meta cb">name2</span>, </code><br>
+						<code>        <span class="meta cb">…</span>, </code><br>
+						<code>        <span class="meta cb">nameN</span> </code><br>
+						<code>    } from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					<p>
+						<code>import </code><br>
+						<code>    <span class="meta cb">name-to-default</span>, </code><br>
+						<code>    * as <span class="meta cb">name</span> </code><br>
+						<code>    from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="trn" rowspan="2"></td>
+				<th colspan="2">dynamic import</th>
+			</tr>
+			<tr>
+				<!-- <td class="trn"></td> -->
+				<td class="ta-c">
+					<p>
+						...
+					</p>
+				</td>
+				<!-- <td>▶</td> -->
+				<td>
+					<p>
+						<!-- <code>import <span class="meta cb">path/name</span>;</code><br> -->
+						<code>import(<span class="meta cb">path/name</span>).</code><br>
+						<code>    then(<span class="meta cb">module</span> => {<span class="meta">...</span>});</code><br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="trn" rowspan="2"></td>
+				<th colspan="2">not importing import mode</th>
+			</tr>
+			<tr>
+				<!-- <td class="trn"></td> -->
+				<td class="ta-c">
+					<p>
+						...
+					</p>
+				</td>
+				<!-- <td>▶</td> -->
+				<td>
+					<p>
+						<code>import <span class="meta cb">path/name</span>;</code><br>
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
