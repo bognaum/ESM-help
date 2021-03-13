@@ -2,20 +2,21 @@ body {
   margin: 100px 100px 500px 100px;
   background-color: #222;
   color: #ccc;
+  font-family: verdana;
 }
 
 code {
-  color: #a3ffc8;
+  color: #0a8;
   padding-left: 10px;
   padding-right: 10px;
   white-space: nowrap;
   white-space: pre;
   font-family: consolas;
-  text-shadow: 0 0 2px #0a8;
+  text-shadow: 0 0 2px #064;
 }
 code span.opt {
-  color: #bbb;
-  text-shadow: 0 0 2px #bbb;
+  color: #aaa;
+  text-shadow: 0 0 2px #aaa;
 }
 code span.opt:before {
   content: " [";
@@ -24,7 +25,7 @@ code span.opt:after {
   content: "]";
 }
 code span.meta {
-  color: #bbb;
+  color: #aaa;
   font-family: courier;
   text-shadow: none;
 }
