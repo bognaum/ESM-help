@@ -101,24 +101,30 @@
 				<!-- <td>▶</td> -->
 				<td rowspan="2">
 					<p>
+						<code>import { <span class="meta cb">name</span> } from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					
+					<p>
+						<code>import { <span class="meta cb">name</span> as <span class="meta cb">alias</span> } </code><br>
+						<code>    from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					
+					<p>
+						<code>import * as <span class="meta cb">name-to-all</span> </code><br>
+						<code>    from <span class="meta cb">path/name</span>;</code> <br>
+					</p>
+					
+					<p>
 						<code>import { <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span> } </code><br>
 						<code>    from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
 					
-					<p><code>import * as <span class="meta cb">name-to-all</span> from <span class="meta cb">path/name</span>;</code> <br></p>
-					
-					<p>
-						<code>import { </code><br>
-						<code>    <span class="meta cb">name</span> as <span class="meta cb">alias</span> </code><br>
-						<code>} from <span class="meta cb">path/name</span>;</code> <br>
-					</p>
-					
-					<p>
+					<!-- <p>
 						<code>import { </code><br>
 						<code>    <span class="meta cb">name1</span> , </code><br>
 						<code>    <span class="meta cb">name2</span> </code><br>
 						<code>} from <span class="meta cb">path/name</span>;</code> <br>
-					</p>
+					</p> -->
 					
 					<p>
 						<code>import { </code><br>
@@ -127,6 +133,11 @@
 						<code>    <span class="meta cb">...</span> </code><br>
 						<code>} from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
+					
+					<!-- <p>
+						<code>import { <span class="meta cb">name1</span>, <span class="meta cb">name2</span> as <span class="meta cb">alias2</span>, <span class="meta cb">...</span> } </code><br>
+						<code>    from <span class="meta cb">path/name</span>;</code> <br>
+					</p> -->
 				</td>
 			</tr>
 			<tr>
@@ -172,18 +183,17 @@
 					<p>
 						<code>import </code><br>
 						<code>    <span class="meta cb">name-to-default</span>, </code><br>
-						<code>    { </code><br>
-						<code>        <span class="meta cb">name1</span>, </code><br>
-						<code>        <span class="meta cb">name2</span>, </code><br>
-						<code>        <span class="meta cb">...</span>, </code><br>
-						<code>        <span class="meta cb">nameN</span> </code><br>
-						<code>    } from <span class="meta cb">path/name</span>;</code> <br>
+						<code>    * as <span class="meta cb">name-to-all</span> </code><br>
+						<code>    from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
 					<p>
 						<code>import </code><br>
 						<code>    <span class="meta cb">name-to-default</span>, </code><br>
-						<code>    * as <span class="meta cb">name-to-all</span> </code><br>
-						<code>    from <span class="meta cb">path/name</span>;</code> <br>
+						<code>    { </code><br>
+						<code>        <span class="meta cb">name2</span>, </code><br>
+						<code>        <span class="meta cb">...</span>, </code><br>
+						<code>        <span class="meta cb">nameN</span> </code><br>
+						<code>    } from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
 				</td>
 			</tr>
