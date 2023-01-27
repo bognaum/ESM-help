@@ -51,12 +51,13 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="trn" rowspan="3"></td>
+				<td class="trn" rowspan="4"></td>
 				<th colspan="2">named export</th>
 			</tr>
 			<tr>
 				<!-- <td class="trn"></td> -->
 				<td>
+					<p><b>export of existing names</b></p>
 					<p><code>export { <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span> };</code><br></p>
 					<p>
 						<code>export { </code><br>
@@ -65,25 +66,6 @@
 						<code>    <span class="meta cb">...</span>, </code><br>
 						<code>    <span class="meta cb">variableN</span> as <span class="meta cb">nameN</span> </code><br>
 						<code> };</code><br>
-					</p>
-					<p>
-						<code>export let  <span class="meta"> // (var)</span></code><br>
-						<code>    <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span>;</code><br>
-					</p>
-					<p>
-						<code>export let  <span class="meta"> // (var, const)</span></code><br>
-						<code>    <span class="meta cb">name1</span> = <span class="meta cb">...</span>, </code><br>
-						<code>    <span class="meta cb">name2</span> = <span class="meta cb">...</span>, </code><br>
-						<code>    <span class="meta cb">...</span>, </code><br>
-						<code>    <span class="meta cb">nameN</span> = <span class="meta cb">...</span>;</code><br>
-					</p>
-
-					<p>
-						<code>export function <span class="meta cb">name</span> () {<span class="meta">...</span>}</code><br>
-					</p>
-
-					<p>
-						<code>export class <span class="meta cb">Name</span> {<span class="meta">...</span>}</code><br>
 					</p>
 
 					<!-- <p>
@@ -99,7 +81,7 @@
 					</p> -->
 				</td>
 				<!-- <td>▶</td> -->
-				<td rowspan="2">
+				<td rowspan="3">
 					<p>
 						<code>import { <span class="meta cb">name</span> } from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
@@ -142,14 +124,39 @@
 			</tr>
 			<tr>
 				<td>
-					<p><code>export * from <span class="meta cb">some-object</span>;</code><br></p>
+					<p><b>export declare their names</b></p>
+					<p>
+						<code>export let  <span class="meta"> // (var)</span></code><br>
+						<code>    <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span>;</code><br>
+					</p>
+					<p>
+						<code>export let  <span class="meta"> // (var, const)</span></code><br>
+						<code>    <span class="meta cb">name1</span> = <span class="meta cb">...</span>, </code><br>
+						<code>    <span class="meta cb">name2</span> = <span class="meta cb">...</span>, </code><br>
+						<code>    <span class="meta cb">...</span>, </code><br>
+						<code>    <span class="meta cb">nameN</span> = <span class="meta cb">...</span>;</code><br>
+					</p>
+
+					<p>
+						<code>export function <span class="meta cb">name</span> () {<span class="meta">...</span>}</code><br>
+					</p>
+
+					<p>
+						<code>export class <span class="meta cb">Name</span> {<span class="meta">...</span>}</code><br>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><b>export from other module</b></p>
+					<p><code>export * from <span class="meta cb">other-module</span>;</code><br></p>
 					<p>
 						<code>export { </code><br>
 						<code>    <span class="meta cb">name1</span>, </code><br>
 						<code>    <span class="meta cb">name2</span>, </code><br>
 						<code>    <span class="meta cb">...</span>, </code><br>
 						<code>    <span class="meta cb">nameN</span> </code><br>
-						<code>} from <span class="meta cb">some-object</span>;</code><br>
+						<code>} from <span class="meta cb">other-module</span>;</code><br>
 					</p>
 					<p>
 						<code>export { </code><br>
@@ -157,7 +164,7 @@
 						<code>    <span class="meta cb">variable2</span> as <span class="meta cb">name2</span>, </code><br>
 						<code>    <span class="meta cb">...</span>, </code><br>
 						<code>    <span class="meta cb">variableN</span> as <span class="meta cb">nameN</span> </code><br>
-						<code>} from <span class="meta cb">some-object</span>;</code><br>
+						<code>} from <span class="meta cb">other-module</span>;</code><br>
 					</p>
 				</td>
 				
