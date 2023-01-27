@@ -21,29 +21,9 @@
 						<p><code>export default <span class="meta cb">variable</span>;</code><br></p>
 
 						<p><code>export default <span class="meta cb">expression</span>;</code><br></p>
-						
-						<!-- <p>
-							<code>export default function (<span class="meta cb">...</span>) { </code><br>
-							<code>    <span class="meta">...</span> </code><br>
-							<code>} <span class="meta">       </span></code><br>
-						</p>
-
-						<p>
-							<code>export default function <span class="meta cb">name</span>(<span class="meta cb">...</span>) { </code><br>
-							<code>    <span class="meta">...</span> </code><br>
-							<code>} <span class="meta"></span></code><br>
-						</p>
-
-						<p>
-							<code>export default class <span class="meta cb">name</span> { </code><br>
-							<code>    <span class="meta">...</span> </code><br>
-							<code>} <span class="meta"></span></code><br>
-						</p> -->
-
 						<p><code>export { <span class="meta cb">variable</span> as default };</code><br></p>
 					</p>
 				</td>
-				<!-- <td>▶</td> -->
 				<td>
 					<p>
 						<code>import <span class="meta cb">name-to-default</span> from <span class="meta cb">path/name</span>;</code> <br>
@@ -55,7 +35,6 @@
 				<th colspan="2">named export</th>
 			</tr>
 			<tr>
-				<!-- <td class="trn"></td> -->
 				<td>
 					<p><b>export of existing names</b></p>
 					<p><code>export { <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span> };</code><br></p>
@@ -67,20 +46,7 @@
 						<code>    <span class="meta cb">variableN</span> as <span class="meta cb">nameN</span> </code><br>
 						<code> };</code><br>
 					</p>
-
-					<!-- <p>
-						<code>export function <span class="meta cb">func-name</span> () { </code><br>
-						<code>    <span class="meta">...</span> </code><br>
-						<code>}</code><br>
-					</p>
-
-					<p>
-						<code>export class <span class="meta cb">Name</span> { </code><br>
-						<code>    <span class="meta">...</span> </code><br>
-						<code>}</code><br>
-					</p> -->
 				</td>
-				<!-- <td>▶</td> -->
 				<td rowspan="3">
 					<p>
 						<code>import { <span class="meta cb">name</span> } from <span class="meta cb">path/name</span>;</code> <br>
@@ -100,14 +66,6 @@
 						<code>import { <span class="meta cb">name1</span>, <span class="meta cb">name2</span>, <span class="meta cb">...</span>, <span class="meta cb">nameN</span> } </code><br>
 						<code>    from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
-					
-					<!-- <p>
-						<code>import { </code><br>
-						<code>    <span class="meta cb">name1</span> , </code><br>
-						<code>    <span class="meta cb">name2</span> </code><br>
-						<code>} from <span class="meta cb">path/name</span>;</code> <br>
-					</p> -->
-					
 					<p>
 						<code>import { </code><br>
 						<code>    <span class="meta cb">name1</span> , </code><br>
@@ -115,11 +73,6 @@
 						<code>    <span class="meta cb">...</span> </code><br>
 						<code>} from <span class="meta cb">path/name</span>;</code> <br>
 					</p>
-					
-					<!-- <p>
-						<code>import { <span class="meta cb">name1</span>, <span class="meta cb">name2</span> as <span class="meta cb">alias2</span>, <span class="meta cb">...</span> } </code><br>
-						<code>    from <span class="meta cb">path/name</span>;</code> <br>
-					</p> -->
 				</td>
 			</tr>
 			<tr>
@@ -174,7 +127,6 @@
 				<th colspan="2">default & named export</th>
 			</tr>
 			<tr>
-				<!-- <td class="trn"></td> -->
 				<td>
 					<p>
 						<code>export { </code><br>
@@ -185,7 +137,6 @@
 						<code>};</code><br>
 					</p>
 				</td>
-				<!-- <td>▶</td> -->
 				<td>
 					<p>
 						<code>import </code><br>
@@ -209,29 +160,16 @@
 				<th colspan="2">dynamic import</th>
 			</tr>
 			<tr>
-				<!-- <td class="trn"></td> -->
 				<td class="ta-c">
 					<p>
 						...
 					</p>
 				</td>
-				<!-- <td>▶</td> -->
 				<td>
 					<p>
-						<!-- <code>import <span class="meta cb">path/name</span>;</code><br> -->
 						<code>import(<span class="meta cb">path/name</span>).</code><br>
 						<code>    then(<span class="meta cb">whole-module</span> => {<span class="meta">...</span>});</code><br>
 					</p>
-					<!-- <p>where <code><span class="meta cb">module</span></code> is:</p>
-					<p>
-						<code>{</code><br>
-						<code>    default</code><br>
-						<code>    <span class="meta cb">name1</span>, </code><br>
-						<code>    <span class="meta cb">name2</span>, </code><br>
-						<code>    <span class="meta cb">...</span>, </code><br>
-						<code>    <span class="meta cb">nameN</span> </code><br>
-						<code>}</code><br>
-					</p> -->
 				</td>
 			</tr>
 			<tr>
@@ -239,13 +177,11 @@
 				<th colspan="2">using module side effect</th>
 			</tr>
 			<tr>
-				<!-- <td class="trn"></td> -->
 				<td class="ta-c">
 					<p>
 						...
 					</p>
 				</td>
-				<!-- <td>▶</td> -->
 				<td>
 					<p>
 						<code>import <span class="meta cb">path/name</span>;</code><br>
